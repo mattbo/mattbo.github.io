@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+ <link rel="stylesheet" href="slides.css" type="text/css" media="screen" />
+ <title>Slide 13</title>
+</head>
+<body>
+ <h1>Hack II: Bad Array XML</h1>
+ <ul>
+  <li>ActionWebService XML: <pre><code>&lt;categories&gt;  
+  &lt;category name="foo"&gt;
+    &lt;bar /&gt;
+    &lt;baz /&gt;
+    &lt;qux /&gt;
+  &lt;/category&gt;
+&lt;/categories&gt;</code></pre></li>
+  <li>Adhoc XML: <pre><code>&lt;categories&gt;
+  &lt;category name=foo&gt;
+    &lt;value&gt;bar&lt;/value&gt;
+    &lt;value&gt;baz&lt;/value&gt;
+    &lt;value&gt;qux&lt;/value&gt;
+  &lt;/category&gt;
+&lt;/categories&gt;</code></pre></li>
+  <li>Causes errors!</li>
+ </ul>
+<a href="12.html" class="prev"><img src="prevButton.png"></a>
+<a href="14.html" class="next"><img src="nextButton.png"></a>
+</body>
+</html>

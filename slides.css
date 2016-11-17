@@ -1,0 +1,50 @@
+body { 
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+}
+
+a { 
+  text-decoration: none;
+  border: none;
+}
+
+img { 
+  border: none;
+}
+
+h1 { 
+  font-family: chalkboard, verdana, serif;
+  font-size: 72pt
+}
+
+h2 { 
+  font-family: chalkboard, verdana, serif;
+  font-size: 36pt
+}
+
+ul { 
+  text-align: left;
+}
+
+li { 
+  font-family: chalkboard, verdana, serif;
+  font-size: 36pt
+}
+
+code { 
+  font-size: 18pt;
+}
+
+a.prev { 
+  display: block;
+  float: left;
+  width: 20%;
+  margin-right: 5%;
+}
+
+a.next { 
+  display: block;
+  margin-left: 70%;
+  width: 20%;
+}

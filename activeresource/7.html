@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+ <link rel="stylesheet" href="slides.css" type="text/css" media="screen" />
+ <title>Slide 7</title>
+</head>
+<body>
+ <h1>ActiveRecord-style</h1>
+ <ul>
+    <li><pre><code>class Resource &lt;&lt; ActiveResource::Base
+  self.site = "http://localhost:3000"
+end</code></pre></li>
+    <li><pre><code>&gt;&gt; r = Resource.new
+&gt;&gt; r.title = "A new resource!"
+&gt;&gt; r.body = "Some useful info"
+&gt;&gt; r.save
+&gt;&gt; t = Resource.find_by_title("A new resource!")
+&gt;&gt; t.body = "Updated info
+&gt;&gt; t.save</code></pre></li>
+ </ul>
+<a href="6.html" class="prev"><img src="prevButton.png"></a>
+<a href="8.html" class="next"><img src="nextButton.png"></a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+ <link rel="stylesheet" href="slides.css" type="text/css" media="screen" />
+ <title>Slide 14</title>
+</head>
+<body>
+ <h1>Bad Array XML Solved</h1>
+ <ul>
+  <li>XML::Builder will create an Array instead of a hash when Adhoc XML 
+is loaded.</li>
+  <li>ActiveResource will flip out. </li>
+  <li>Override <code>find_or_create_resource_for_collection</code>
+<pre><code>class Category &lt;&lt; ActiveResource::Base
+  def find_or_create_resource_for_collection(name)
+    #special case for categories
+    if (name == "values") then return String
+    else super
+    end
+  end
+end</code></pre></li>
+ </ul>
+<a href="13.html" class="prev"><img src="prevButton.png"></a>
+<a href="15.html" class="next"><img src="nextButton.png"></a>
+</body>
+</html>

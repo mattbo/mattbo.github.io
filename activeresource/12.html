@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+ <link rel="stylesheet" href="slides.css" type="text/css" media="screen" />
+ <title>Slide 12</title>
+</head>
+<body>
+ <h1>Hack I: *_path</h1>
+ <ul>
+    <li>element_path and collection_path define the URL format.</li>
+    <li>I didn't want .xml on the end of my URLs</li>
+    <li>AdhocResource &lt;&lt; ActiveResource::Base has : 
+<pre><code>class &lt;&lt; self
+  def element_path(id, options={})
+    "#{prefix(options}}#{collection_name}/#{id}#{query_string(options)}"
+  end
+  def collection_path(id, options={})
+    "#{prefix(options}}#{collection_name}#{query_string(options)}"
+  end
+end</code></pre></li>
+ </ul>
+<a href="11.html" class="prev"><img src="prevButton.png"></a>
+<a href="13.html" class="next"><img src="nextButton.png"></a>
+</body>
+</html>

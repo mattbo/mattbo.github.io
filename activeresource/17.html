@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+ <link rel="stylesheet" href="slides.css" type="text/css" media="screen" />
+ <title>Slide 17</title>
+</head>
+<body>
+ <h1>Specifying order in to_xml</h1>
+ <ul>
+  <li>Check this out: <pre><code>
+def to_xml(options = {})
+   @attrib_order = ["x", "y", "z"]
+   #shamelessly stolen from active_support::to_xml
+   options[:indent] ||= 2
+   options.reverse_merge!({
+        :builder =&lt; Builder::XmlMarkup.new(:indent =&lt; option[:indent]),
+        :root =&lt; "advertiser" })
+   xm = options[:builder]
+   xm.instruct!
+   xm.advertiser ("id" =&lt; ADVERTISER_ID) {
+     xm.ad {
+      @attrib_order.each { |key| ordered_xml(key, @attributes[key], options)}
+     }
+   }
+end</code></pre></li>
+ </ul>
+<a href="16.html" class="prev"><img src="prevButton.png"></a>
+<a href="18.html" class="next"><img src="nextButton.png"></a>
+</body>
+</html>
