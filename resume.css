@@ -18,15 +18,15 @@ body {
 }
 
 #myName { 
-    line-height: 22pt; 
-    font-size: 18pt;
-    text-align: right;
+    line-height: 20pt; 
+    font-size: 16pt;
+    text-align: left;
 }
 
 a.msg { /*message to recruiters */
   display: block;
   font-size: 90%;
-  text-align: left;
+  text-align: right;
   vertical-align: bottom;
   margin: -10px 0;
   padding: 0;
@@ -35,7 +35,7 @@ a.msg { /*message to recruiters */
 
 .adr { 
     margin-bottom: 0pt;
-    text-align: right;
+    text-align: left;
 }
 
 .summary {
