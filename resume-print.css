@@ -20,7 +20,7 @@ body {
 #myName { 
     line-height: 22pt; 
     font-size: 18pt;
-    text-align: right;
+    text-align: left;
 }
 
 a.msg { 
@@ -29,7 +29,7 @@ a.msg {
 
 .adr { 
     margin-bottom: 0pt;
-    text-align: right;
+    text-align: left;
 }
 
 .summary {
