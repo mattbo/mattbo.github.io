@@ -64,7 +64,10 @@ a.msg { /*message to recruiters */
 
 /* Display experience titles on multiple lines on mobile */
 @media (max-width: 600px) {
-    .date_duration, .htitle {
+    .date_duration {
+        display: inline-block;
+    }
+    .htitle {
         display: inline-block;
     }
 }
