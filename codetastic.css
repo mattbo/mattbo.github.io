@@ -78,7 +78,7 @@ ul.header_links {
 }
 
 ul.header_links li { 
-  display: inline;
+  display: inline-block;
   color: #fff; 
   list-style: none;
   margin: 0 0px;

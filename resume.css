@@ -20,6 +20,8 @@ body {
 #myName { 
     line-height: 20pt; 
     font-size: 16pt;
+    margin: 0;
+    font
     text-align: left;
 }
 
@@ -60,6 +62,13 @@ a.msg { /*message to recruiters */
     margin: 0;
 }
 
+/* Display experience titles on multiple lines on mobile */
+@media (max-width: 600px) {
+    .htitle {
+        display: inline-block;
+    }
+}
+
 .date_duration {
     font-weight: bold;
     float: right;
@@ -81,6 +90,8 @@ a.msg { /*message to recruiters */
 }
 
 .heading {
+    font-size: 100%;
+    margin: 0;
     font-weight: bold;
     letter-spacing:     0.20em;
     text-transform: uppercase;
