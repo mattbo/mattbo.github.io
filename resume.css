@@ -62,6 +62,13 @@ a.msg { /*message to recruiters */
     margin: 0;
 }
 
+.date_duration {
+    font-weight: bold;
+    float: right;
+    width: 20%;
+    text-align: right;
+}
+
 /* Display experience titles on multiple lines on mobile */
 @media (max-width: 600px) {
     .date_duration {
@@ -70,13 +77,6 @@ a.msg { /*message to recruiters */
     .htitle {
         display: inline-block;
     }
-}
-
-.date_duration {
-    font-weight: bold;
-    float: right;
-    width: 20%;
-    text-align: right;
 }
 
 .org, .title{ 
